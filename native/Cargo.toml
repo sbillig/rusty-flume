@@ -1,0 +1,18 @@
+[package]
+name = "rusty-flumelog"
+version = "0.1.0"
+authors = ["sean billig"]
+build = "build.rs"
+exclude = ["artifacts.json", "index.node"]
+
+[lib]
+name = "rusty_flumelog"
+crate-type = ["dylib"]
+
+[build-dependencies]
+neon-build = "0.2"
+
+[dependencies]
+neon = "0.2"
+flumedb = { git = "https://github.com/sbillig/flumedb-rs" }
+byteorder = "1"

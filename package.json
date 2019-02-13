@@ -1,0 +1,21 @@
+{
+  "name": "rusty-flumelog",
+  "version": "0.1.0",
+  "description": "flumelog-offset in rust",
+  "main": "lib/index.js",
+  "author": "sean billig",
+  "license": "AGPL-3.0-or-later",
+  "dependencies": {
+    "flumecodec": "0.0.1",
+    "neon-cli": "^0.2.0",
+    "obv": "0.0.1"
+  },
+  "scripts": {
+    "install": "neon build",
+    "test": "node test/index.js"
+  },
+  "devDependencies": {
+    "bench-flumelog": "^1.2.0",
+    "test-flumelog": "^1.0.0"
+  }
+}
