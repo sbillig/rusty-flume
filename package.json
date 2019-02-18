@@ -12,10 +12,12 @@
   },
   "scripts": {
     "install": "neon build",
-    "test": "node test/index.js"
+    "test": "node test/index.js | tap-spec"
   },
   "devDependencies": {
     "bench-flumelog": "^1.2.0",
+    "tap-spec": "^5.0.0",
+    "tape": "4.10.1",
     "test-flumelog": "^1.0.0"
   }
 }

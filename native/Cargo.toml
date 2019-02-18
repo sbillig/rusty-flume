@@ -14,5 +14,5 @@ neon-build = "0.2"
 
 [dependencies]
 neon = "0.2"
-flumedb = { git = "https://github.com/sbillig/flumedb-rs" }
+flumedb = { git = "https://github.com/sbillig/flumedb-rs", rev = "f069ab1" }
 byteorder = "1"
