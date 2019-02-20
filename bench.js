@@ -1,9 +1,8 @@
-var FlumeLog = require('./src/')
+var flume = require('./lib/')
 var codec = require('flumecodec')
 
 require('bench-flumelog')(function () {
-  return FlumeLog('/tmp/bench-flumelog-offset' + Date.now(), {
-    blockSize: 1024*64,
+  return flume.OffsetLog('/tmp/bench-flumelog-offset' + Date.now(), {
     codec: codec.json
   })
 }, null, null, function (obj) {
